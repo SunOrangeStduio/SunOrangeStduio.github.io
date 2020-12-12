@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ja">
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>SunOrangeStudio</title>
+  <title>02.Hexoコマンド | SunOrangeStudio</title>
   <meta name="author" content="x.Do" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -15,19 +15,19 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="123123 这个格式，只要不加标题即可  1测试">
+  <meta name="description" content="Hexoコマンドについて略語、サーバー、テンプレート">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SunOrangeStudio">
-<meta property="og:url" content="http://example.com/2020/12/12/title2/index.html">
+<meta property="og:title" content="02.Hexoコマンド">
+<meta property="og:url" content="http://example.com/2020/12/13/02.Hexo%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/index.html">
 <meta property="og:site_name" content="SunOrangeStudio">
-<meta property="og:description" content="123123 这个格式，只要不加标题即可  1测试">
-<meta property="og:locale">
-<meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2020-12-12T09:35:48.141Z">
-<meta property="article:modified_time" content="2020-12-12T09:41:56.371Z">
+<meta property="og:description" content="Hexoコマンドについて略語、サーバー、テンプレート">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="http://example.com/2020/12/13/02.Hexo%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/theme.jpg">
+<meta property="article:published_time" content="2020-12-12T21:29:27.094Z">
+<meta property="article:modified_time" content="2020-12-12T21:35:54.848Z">
 <meta property="article:author" content="x.Do">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/null">
+<meta name="twitter:image" content="http://example.com/2020/12/13/02.Hexo%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/theme.jpg">
 <meta name="twitter:site" content="@null">
   
   <!-- 站点验证相关 -->
@@ -73,11 +73,15 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                        <li><a href="/"><i class="fa fa-home"></i>ホーム</a></li>
                                     
                                 
                                     
                                         <li><a href="/archives/"><i class="fa fa-file"></i>技術API</a></li>
+                                    
+                                
+                                    
+                                        <li><a target="_blank" rel="noopener" href="https://www.bilibili.com"><i class="fa fa-link"></i>雪と君と</a></li>
                                     
                                 
                             </ul>
@@ -107,17 +111,17 @@
     <article>
         <div class="kratos-hentry kratos-post-inner clearfix">
             <header class="kratos-entry-header">
-                <h1 class="kratos-entry-title text-center"></h1>
+                <h1 class="kratos-entry-title text-center">02.Hexoコマンド</h1>
                 
                 <div class="kratos-post-meta text-center">
                     <span>
-                        <i class="fa fa-calendar"></i> 2020-12-12
-                        <i class="fa fa-folder"></i> 分类于 
+                        <i class="fa fa-calendar"></i> 2020-12-13
+                        <i class="fa fa-folder"></i> 分类于 <a class="label-link" href="/categories/%E6%8A%80%E8%A1%93/">技術</a>, <a class="label-link" href="/categories/%E6%8A%80%E8%A1%93/01-Hexo/">01.Hexo</a>
                         <i class="fa fa-user"></i> 作者 x.Do
                         <i class="fa fa-edit"></i> 
                         
                         
-                            27
+                            625
                         
                         字
                         
@@ -127,11 +131,15 @@
             <div class="kratos-post-content">
                 
                 <hr />
-                <p>123123</p>
-<p>这个格式，只要不加标题即可</p>
-<p><img src="/2020/12/12/title2/%E9%92%A2.png"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">测试</span><br></pre></td></tr></table></figure>
+                <p>Hexoコマンドについて略語、サーバー、テンプレート</p>
+<a id="more"></a>
 
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d </span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+
+<h2 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h2><p><code>hexo n &quot;我的博客&quot;</code> == <code>hexo new &quot;我的博客&quot;</code> #新建文章<br><code>hexo p</code> == <code>hexo publish</code><br><code>hexo g</code> == <code>hexo generate</code>#生成<br><code>hexo s</code> == <code>hexo server</code> #启动服务预览<br><code>hexo d</code> == <code>hexo deploy</code>#部署</p>
+<h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><p><code>hexo server</code> #Hexo 会监视文件变动并自动更新，您无须重启服务器。<br><code>hexo server -s</code> #静态模式<br><code>hexo server -p 5000</code> #更改端口<br><code>hexo server -i 192.168.1.1</code> #自定义 IP</p>
+<p><code>hexo clean</code> #清除缓存 网页正常情况下可以忽略此条命令<br><code>hexo g</code> #生成静态网页<br><code>hexo d</code> #开始部署</p>
+<h2 id="模版"><a href="#模版" class="headerlink" title="模版"></a>模版</h2><p><code>hexo new page &quot;pageName&quot;</code> #新建页面<br><code>hexo generate</code> #生成静态页面至public目录<br><code>hexo server</code> #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br><code>hexo deploy</code> #将.deploy目录部署到GitHub</p>
 
             </div>
             
@@ -181,7 +189,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2020/12/12/title2/",
+                text: "http://example.com/2020/12/13/02.Hexo%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -193,14 +201,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2020/12/12/title2/";
-            const title         = "「」";
-            const excerpt       = `123123
-这个格式，只要不加标题即可
-
-1测试
-
-`;
+            const hostUrl       = "http://example.com/2020/12/13/02.Hexo%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/";
+            const title         = "「02.Hexoコマンド」";
+            const excerpt       = `Hexoコマンドについて略語、サーバー、テンプレート`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -222,7 +225,7 @@
                         
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2020-12-12</span>
+                    <span>最后编辑：2020-12-13</span>
                     </div>
                 </div>
             </footer>
@@ -231,7 +234,7 @@
             <nav class="navigation post-navigation clearfix" role="navigation">
                 
                 <div class="nav-previous clearfix">
-                    <a title=" HEXO学习2" href="/2020/12/12/hexo stduy2/">&lt; 上一篇</a>
+                    <a title=" 01.Hexo画像学習" href="/2020/12/12/01.Hexo画像学習/">&lt; 前</a>
                 </div>
                 
                 
@@ -263,8 +266,8 @@
                 
                     
   <aside id="krw-categories" class="widget widget-categories clearfix">
-    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/%E9%9A%8F%E6%83%B3/">随想</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a><span class="category-list-count">1</span></li></ul>
+    <h4 class="widget-title"><i class="fa fa-folder"></i>カテゴリ</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E8%A1%93/">技術</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E8%A1%93/01-Hexo/">01.Hexo</a><span class="category-list-count">2</span></li></ul></li></ul>
   </aside>
 
 
@@ -273,29 +276,20 @@
                 
                     
   <aside id="krw-posts" class="widget widget-kratos-poststab">
-  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <h4 class="widget-title"><i class="fa fa-file"></i>最近の投稿</h4>
   <div class="tab-content">
       <ul class="list-group">
         
         
           
           
-        
-          
-          
-            <a class="list-group-item" href="/2020/12/12/hexo%20stduy2/"><i class="fa  fa-book"></i> HEXO学习2</a>
+            <a class="list-group-item" href="/2020/12/13/02.Hexo%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/"><i class="fa  fa-book"></i> 02.Hexoコマンド</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2020/12/12/hexo%20stduy/"><i class="fa  fa-book"></i> HEXO学习</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2020/12/12/title/"><i class="fa  fa-book"></i> title</a>
+            <a class="list-group-item" href="/2020/12/12/01.Hexo%E7%94%BB%E5%83%8F%E5%AD%A6%E7%BF%92/"><i class="fa  fa-book"></i> 01.Hexo画像学習</a>
             
           
         
@@ -353,7 +347,7 @@
                     </ul>
                     <ul class="kratos-copyright">
                         <div>
-                            <li>&copy; 2020 x.Do 版权所有.</li>
+                            <li>&copy; 2020 x.Do 無断転載禁止.</li>
                             <li>本站已运行<span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
